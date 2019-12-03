@@ -57,22 +57,19 @@ function slideRightForWideScreen() {
 // Right Slide for Small Screen
 function slideRightForSmallScreen() {
     reset();
-    console.log(current,2);
     carouselItems[current + 1].style.display = "block";
     current++;
 }
 
 // Right Slide Event Listener
 arrowRight.addEventListener('click', () => {
-    leftArrowImg.style.transform = 'rotate(180deg)';
-    leftArrowImg.src = '../img/Group 88.png';
+    leftArrowImg.style.color = '#058DBF';
 
     // If the Screen is Wide
     if (!isSmall) {
 
         if (current === carouselItems.length - 4) {
-            rightArrowImg.style.transform = 'rotate(180deg)';
-            rightArrowImg.src = '../img/Group 92.png';
+            rightArrowImg.style.color = 'gray';
         }
         if (current === carouselItems.length - 3) {
             return
@@ -82,11 +79,8 @@ arrowRight.addEventListener('click', () => {
     // If the Screen is Small    
     } else if (isSmall) {
 
-        console.log(carouselItems.length);
-
         if (current === carouselItems.length - 2) {
-            rightArrowImg.style.transform = 'rotate(180deg)';
-            rightArrowImg.src = '../img/Group 92.png';
+            rightArrowImg.style.color = 'gray';
         }
         if (current === carouselItems.length - 1) {
             return
@@ -117,15 +111,13 @@ function slideLeftForSmallScreen() {
 
 // Left Slide for Event Listener
 arrowLeft.addEventListener('click', () => {
-    rightArrowImg.style.transform = 'rotate(0deg)';
-    rightArrowImg.src = '../img/Group 88.png';
+    rightArrowImg.style.color = '#058DBF';
 
     // If Screen is Wide
     if (!isSmall) {
 
         if (current === 1) {
-            leftArrowImg.style.transform = 'rotate(0deg)';
-            leftArrowImg.src = '../img/Group 92.png';
+            leftArrowImg.style.color = 'gray';
         }
         if (current === 0) {
             return
@@ -136,8 +128,7 @@ arrowLeft.addEventListener('click', () => {
     } else if (isSmall) {
 
         if (current === 1) {
-            leftArrowImg.style.transform = 'rotate(0deg)';
-            leftArrowImg.src = '../img/Group 92.png';
+            leftArrowImg.style.color = 'gray';
         }
         if (current === 0) {
             return

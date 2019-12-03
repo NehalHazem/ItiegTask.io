@@ -52,7 +52,6 @@ nav li {
 
 nav a {
     text-decoration: none;
-    /* text-align: center; */
     color: #999999;
     padding-bottom: 5px!important;
     display: block;
@@ -81,9 +80,8 @@ nav a.active {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../../img/Rectangle\ 26@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to right, #078CBC , #A8D4E0);
+    opacity: 0.9;
 }
 
 .top-left {
@@ -122,8 +120,66 @@ ul.btn-group {
 }
 
 .btn-group li {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
+
+a.btn-background.blue {
+    background: #058DBF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 80px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+    cursor: pointer;
+}
+
+a.btn-background.green {
+    background: #96D7C5;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 116px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+    cursor: pointer;
+}
+
+a.btn-background.yellow {
+    background: #F4ED95;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 105px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+}
+
+a.btn-background.orange {
+    background: #F6CE9E;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 112px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+}
+
+a.btn-background.rose {
+    background: #FAA4AA;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 34px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+}
+
 
 div.para {
     font-family: 'OpenSans', sans-serif;
@@ -133,9 +189,46 @@ div.para {
     padding-top: 30px;
 }
 
+.imgPara2.hide {
+    display: none;
+}
+
+.imgPara222.hide {
+    display: none;
+}
+
 .imgPara2 img {
     width: 100%;
     height: auto;
+}
+
+.imgPara222 img {
+    width: 100%;
+    height: auto;
+}
+
+.whiteBackground {
+    background: #fff;
+    margin-top: -5px;
+    padding: 50px 40px 60px;
+    text-align: center;
+
+}
+
+.whiteBackground h4 {
+    color: #05A679;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.whiteBackground a {
+    background: #05A679;
+    color: #fff;
+    padding: 20px 70px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
 .imgPara2 p {
@@ -146,6 +239,16 @@ div.para {
     color: #333333;
 }
 
+.imgPara222 .para {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 22px;
+    color: #333333;
+    text-align: left;
+    line-height: 40px;
+}
+
 .imgPara2 ul {
     list-style-type: none;
     padding-top: 20px;
@@ -154,12 +257,22 @@ div.para {
     font-weight: 500;
     color: #333333;
     padding-left: 20px;
+    position: relative;
 }
 
 .imgPara2 li {
     padding-bottom: 15px;
-    list-style-image: url(../img/Ellipse\ 3.png);
     padding-left: 2px;
+}
+
+ul.list li:before {
+	content: " ";
+    position: absolute;
+    background: #058DBF;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+	left: 0;
 }
 
 .imgPara2 span {
@@ -196,6 +309,16 @@ div.para {
     position: relative;
 }
 
+.rightArrowImg {
+    color: #058DBF;
+    cursor: pointer;
+}
+
+.leftArrowImg {
+    color: gray;
+    cursor: pointer;
+}
+
 .section3 #arrow-left {
     position: absolute;
     top: 45px;
@@ -208,37 +331,11 @@ div.para {
     right: -50px;
 }
 
-.overImg1:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 32px;
-    left: 45px;
-    background: url(../img/Rectangle\ 38.png);
-    background-repeat: no-repeat;
-}
-
-.overImg2:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 32px;
-    left: 45px;
-    background: url(../img/Rectangle\ 39.png);
-    background-repeat: no-repeat;
-}
-
-.overImg3:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 32px;
-    left: 45px;
-    background: url(../img/Rectangle\ 40.png);
-    background-repeat: no-repeat;
+img.slider {
+    margin: 4px;
+    background: #fff;
+    padding: 25px 34px;
+    border: 1px solid #EAEAEA;
 }
 
 
@@ -269,6 +366,12 @@ p.heading {
 
 .links li {
     padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .newsletter input {
@@ -299,7 +402,7 @@ p.heading {
 }
 
 .follow ul {
-    margin-top: 25px;
+    margin-top: 22px;
     list-style-type: none;
 }
 
@@ -308,19 +411,28 @@ p.heading {
     padding-right: 5px;
 }
 
-.inst {
-    position: relative;
+span.iconCircle {
+    background: #fff;
+    padding: 9px 9px 8px;
+    border-radius: 50%;
 }
 
-.inst:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: url(../img/Group\ 69.png);
-    background-repeat: no-repeat;
+span.fbCircle {
+    background: #fff;
+    padding: 9px 11px 8px;
+    border-radius: 50%;
+}
+
+.fb {
+    color: #058DBF;
+}
+
+.twitter {
+    color: #058DBF;
+}
+
+.inst {
+    color: #058DBF;
 }
 
 div.rights {
@@ -600,5 +712,65 @@ div.rights {
     .section3 p {
         padding: 8px 15% 40px;
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    
+    .imgPara222 .para {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    
+    .whiteBackground a {
+        padding: 20px 50px;
+    }
+
+    .imgPara222 .para {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    
+    .whiteBackground a {
+        padding: 20px 30px;
+    }
+
+    .imgPara222 .para {
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+}
+
+@media screen and (max-width: 413px) {
+
+    a.btn-background.blue {
+        font-size: 15px;
+        padding: 10px 30px 10px 80px;
+    }
+    
+    a.btn-background.green {
+        font-size: 15px;
+        padding: 10px 30px 10px 112px;
+    }
+    
+    a.btn-background.yellow {
+        font-size: 15px;
+        padding: 10px 30px 10px 105px;
+    }
+    
+    a.btn-background.orange {
+        font-size: 15px;
+        padding: 10px 30px 10px 112px;
+    }
+    
+    a.btn-background.rose {
+        font-size: 15px;
+        padding: 10px 30px 10px 45px;
     }
 }
